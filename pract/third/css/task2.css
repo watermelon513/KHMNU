@@ -1,0 +1,83 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.main-title {
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.process-box {
+    display: inline-block;
+    width: 50%;
+    height: 50vh;
+    box-sizing: border-box;
+    font-size: 1rem;
+    vertical-align: top;
+    padding: 20px;
+    border: 2px solid #f0a0a0;
+}
+
+.process-box:nth-child(odd) {
+    border-right: 1px solid #f0a0a0;
+}
+
+.process-box:nth-child(even) {
+    border-left: 1px solid #f0a0a0;
+}
+
+.process-box:nth-child(1),
+.process-box:nth-child(2) {
+    border-bottom: 1px solid #f0a0a0;
+}
+
+.process-box:nth-child(3),
+.process-box:nth-child(4) {
+    border-top: 1px solid #f0a0a0;
+}
+
+.process-box h2 {
+    position: relative;
+    padding-left: 40px;
+    font-size: 1.2rem;
+}
+
+.process-box h2::before {
+    content: attr(data-num);
+    position: absolute;
+    left: 0;
+    top: -5px;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #a00;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    color: #000;
+}
+
+.process-box ul {
+    list-style: none;
+    padding-left: 40px;
+}
+
+.process-box ul li {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.process-box ul li::before {
+    content: '-';
+    position: absolute;
+    left: -15px;
+}
+
+.process-box ul li:nth-child(even) {
+    color: #d00;
+}

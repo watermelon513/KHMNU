@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+    line-height: 1.7;
+    background-color: #fff;
+    padding: 40px 20px;
+}
+
+
+h1,
+h2,
+h3,
+.logo-title,
+.site-description {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.site-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.site-header {
+    margin-bottom: 60px;
+}
+
+.logo-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 5px;
+    letter-spacing: -0.5px;
+}
+
+.site-description {
+    font-size: 14px;
+    color: #777;
+}
+
+.main-layout {
+    display: flex;
+    gap: 60px;
+}
+
+.content-area {
+    flex: 1;
+}
+
+.sidebar {
+    width: 300px;
+    flex-shrink: 0;
+}
+
+.page-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.content-body p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.profile-photo {
+    float: right;
+    width: 250px;
+    height: auto;
+    margin: 0 0 20px 30px;
+    object-fit: cover;
+}
+
+.widget {
+    margin-bottom: 45px;
+}
+
+.search-widget {
+    display: flex;
+}
+
+.search-widget input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-right: none;
+    font-family: inherit;
+}
+
+.search-widget button {
+    background: #111;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.widget-title {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #111;
+    border-top: 2px solid #111;
+    border-bottom: 2px solid #111;
+    padding: 12px 0;
+    margin-bottom: 20px;
+}
+
+.widget-list {
+    list-style: none;
+}
+
+.widget-list li {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.widget-list li::before {
+    content: "• ";
+    color: #888;
+    margin-right: 5px;
+}
+
+.widget-list li a {
+    color: #444;
+}
+
+.widget-list li a:hover {
+    color: #111;
+}

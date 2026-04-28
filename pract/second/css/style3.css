@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #8CC63F;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px 20px;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.logo {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo p {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #4CAF50;
+}
+
+.logo b {
+    font-size: 32px;
+    font-weight: bold;
+    color: #388E3C;
+    line-height: 1.1;
+}
+
+.logo i {
+    font-size: 12px;
+    color: #999;
+    font-style: normal;
+    margin-top: 2px;
+}
+
+.logo picture img {
+    width: 60px !important;
+    height: auto;
+}
+
+.contacts {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.contacts p {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contacts a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.contacts i {
+    font-size: 12px;
+    color: #777;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.header>img {
+    grid-column: 1 / -1;
+    width: 100%;
+    display: block;
+}
+
+.main {
+    display: flex;
+    padding: 30px 20px;
+    gap: 40px;
+}
+
+.main-text {
+    flex: 1;
+}
+
+.main-text h1 {
+    color: #4CAF50;
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.main-text p {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.menu {
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.menu>p {
+    background-color: #388E3C;
+    color: #fff;
+    padding: 12px 15px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.menu nav ul {
+    list-style: none;
+}
+
+.menu nav ul li {
+    margin-bottom: 15px;
+}
+
+.menu nav ul li a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #4CAF50;
+    padding-bottom: 2px;
+    transition: all 0.3s ease;
+}
+
+.menu nav>a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #777;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.menu nav>a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #388E3C;
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 14px;
+    margin: 0;
+}
