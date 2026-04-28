@@ -7,7 +7,7 @@ html {
 body {
     width: 600px;
     margin: 0 auto;
-    background-color: #f7df1e;
+    background-color: #ff9a03;
     padding: 0 20px 20px 20px;
     border: 3px solid #ffffff;
     border-radius: 10px;
@@ -46,7 +46,7 @@ button {
     margin: 20px auto;
     padding: 10px 20px;
     background-color: #1e1e1e;
-    color: #f7df1e;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;

@@ -2,10 +2,10 @@ let myImage = document.querySelector('img');
 
 myImage.onclick = function() {
     let mySrc = myImage.getAttribute('src');
-    if (mySrc === 'images/js-logo.png') {
-        myImage.setAttribute('src', 'images/react-logo.png');
+    if (mySrc === 'images/Firefox_logo,_2019.svg') {
+        myImage.setAttribute('src', 'images/Firefox_logo,_2019.svg');
     } else {
-        myImage.setAttribute('src', 'images/js-logo.png');
+        myImage.setAttribute('src', 'images/Firefox_logo,_2019.svg');
     }
 }
 
@@ -19,7 +19,7 @@ function setUserName() {
         setUserName();
     } else {
         localStorage.setItem('name', myName);
-        myHeading.innerHTML = 'JavaScript - це круто, ' + myName;
+        myHeading.innerHTML = 'Mozilla - це потужно, ' + myName;
     }
 }
 
@@ -27,7 +27,7 @@ if (!localStorage.getItem('name')) {
     setUserName();
 } else {
     let storedName = localStorage.getItem('name');
-    myHeading.innerHTML = 'JavaScript - це круто, ' + storedName;
+    myHeading.innerHTML = 'Mozilla - це потужно, ' + storedName;
 }
 
 myButton.onclick = function() {

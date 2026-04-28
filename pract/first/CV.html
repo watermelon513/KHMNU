@@ -1,69 +1,57 @@
 <!DOCTYPE html>
 <html lang="uk">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Особистий Профіль</title>
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дзядик Богдан - Профіль</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1>Дзядик Богдан</h1>
+            <p class="subtitle">Frontend Developer</p>
+        </div>
+    </header>
 
-        <header class="header">
-            <div class="container flex-between">
-                <div class="logo">MyProfile.</div>
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li><a href="#about" class="nav-link">Про мене</a></li>
-                        <li><a href="#skills" class="nav-link">Навички</a></li>
-                        <li><a href="#projects" class="nav-link">Проєкти</a></li>
-                        <li><a href="#contact" class="nav-link">Контакти</a></li>
-                    </ul>
-                </nav>
+    <div class="container main-layout">
+        <main class="content">
+            <h2>Про мене</h2>
+            <div class="bio-section">
+                <img src="img/im-looking-for-an-emoticon-like-this-i-looked-everywhere-v0-edwtnntfxs3e1.webp" alt="Дзядик Богдан" class="profile-img">
+                
+                <div class="bio-text">
+                    <p>Привіт! Мене звати Богдан. Я спеціалізуюся на створенні сучасних та зручних веб-інтерфейсів.
+                    <p>У розробці моїми основними інструментами є HTML, CSS, Java Script. Мені подобається перетворювати складні макети з Figma на чистий, структурований код.</p>
+                    <p>Окрім програмування, я активно веду соціальні мережі Instagram, де ділюся своїм життям.</p>
+                </div>
             </div>
-        </header>
-
-        <main>
-            <section id="about" class="hero section">
-                <div class="container hero-content">
-                    <h1 class="hero-title">Привіт, я <span>Паталашко Артем</span></h1>
-                    <h2 class="hero-subtitle">Frontend Developer</h2>
-                    <p class="hero-description">
-                        Створюю сучасні та інтерактивні веб-додатки.
-                        Базуюсь у м. Хмельницький. Відкритий до нових викликів та цікавих проєктів!
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">Мої роботи</a>
-                        <a href="#contact" class="btn btn-secondary">Зв'язатися</a>
-                    </div>
-                </div>
-            </section>
-
-            <section id="skills" class="skills section bg-light">
-                <div class="container">
-                    <h2 class="section-title">Моя експертиза</h2>
-                    <div class="skills-grid">
-                        <div class="skill-card">
-                            <h3>Frontend Розробка</h3>
-                            <p>JavaScript, React, Vue.js, HTML5, CSS3, SCSS.</p>
-                        </div>
-                        <div class="skill-card">
-                            <h3>AI creator</h3>
-                            <p>Напишу і зроблю мультфільм з ШІ</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </main>
 
-        <footer id="contact" class="footer">
-            <div class="container flex-between">
-                <p>&copy; 2026 Паталашко Артем. Всі права захищені.</p>
-                <div class="social-links">
-                    <a href="#" target="_blank">Telegram</a>
-                    <a href="#" target="_blank">GitHub</a>
-                    <a href="#" target="_blank">LinkedIn</a>
-                </div>
+        <aside class="sidebar">
+            <div class="widget">
+                <h3>Пошук</h3>
+                <input type="text" placeholder="Шукати на сайті...">
             </div>
-        </footer>
+            
+            <div class="widget">
+                <h3>Категорії</h3>
+                <ul>
+                    <li><a href="#">Frontend розробка</a></li>
+                    <li><a href="#">Мої проєкти</a></li>
+                    <li><a href="#">Едит машин</a></li>
+                    <li><a href="#">Фотошоп</a></li>
+                </ul>
+            </div>
 
-    </body>
+            <div class="widget">
+                <h3>Контакти</h3>
+                <ul>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+</body>
 </html>
